@@ -41,6 +41,31 @@ console.log(bigIntNumber); // Outputs: 123456789012345678901234567890
 
 **In contrast, languages like Python, Java, C++, and C# have distinct integer types (e.g., `int`, `long`) and floating-point types (e.g., `float`, `double`) for more control over number representation and precision.**
 
+**Here's a table indicating number types associated with different programming languages, starting with JavaScript:**
+
+| Language | Integer Types | Floating-Point Types | Other Number Types |
+|---|---|---|---|
+| JavaScript | Number (64-bit double-precision float, can represent whole numbers as well) | Number | BigInt (for arbitrarily large integers), boolean |
+| Python | int, long (arbitrary precision), bool | float, double | complex, decimal.Decimal |
+| Java | byte, short, int, long | float, double | boolean, char |
+| C/C++ | char, short, int, long, long long | float, double | _Bool |
+| C# | sbyte, byte, short, ushort, int, uint, long, ulong | float, double, decimal | bool |
+| Swift | Int (8, 16, 32, 64), UInt (8, 16, 32, 64), Bool | Float, Double | Character, String.Index |
+| Ruby | Fixnum (small integers), Bignum (large integers), bool | Float | Complex |
+| PHP | int, float, bool |  | string (can be used for numeric calculations) |
+
+**Key Points:**
+
+- **JavaScript's Number type:** Uniquely handles both integers and floating-point numbers, with limitations for very large or precise integers.
+- **Python's long type:** Offers arbitrary precision for integers.
+- **Java's char type:** Stores single characters, but often treated as numeric values (Unicode code points).
+- **C#'s decimal type:** Provides high-precision decimal representation.
+- **Swift's Int and UInt types:** Configurable for different integer sizes.
+- **Ruby's Fixnum and Bignum types:** Automatically handle different integer ranges.
+- **PHP's string type:** Can be used for numeric calculations, but with potential type conversion issues.
+
+**Remember:** Exact names, sizes, and behaviors of number types can vary slightly across languages. Consult language-specific documentation for precise details.
+
 Here's an expanded table with more comprehensive details on number types:
 
 | Number Type | Description | Examples | Typical Size (bits) | Precision | Common Subtypes | Range |
