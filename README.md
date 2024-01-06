@@ -22,6 +22,22 @@ let num3 = 12345678901234567890;  // Might encounter precision issues
 let bigNum = 9007199254740991n;  // Using BigInt for a large integer
 ```
 
+In JavaScript, while numbers are typically represented as 64-bit floating-point values, there is a distinct type called `BigInt`. `BigInt` is used to represent integers of arbitrary length, allowing you to work with numbers beyond the limitations of regular JavaScript numbers (which have a maximum safe integer size).
+
+`BigInt` allows you to perform operations on very large integers without losing precision. It's denoted by appending `n` to the end of a number or by using the `BigInt()` constructor function.
+
+For example:
+```javascript
+const regularNumber = 123456789012345678901234567890; // Regular number (may lose precision)
+const bigIntNumber = 123456789012345678901234567890n; // BigInt
+
+console.log(regularNumber); // Outputs: 123456789012345680000000000000
+console.log(bigIntNumber); // Outputs: 123456789012345678901234567890
+```
+
+`BigInt` is distinct from regular JavaScript numbers and allows for precise operations on extremely large integers, providing flexibility beyond the limitations of standard 64-bit floating-point numbers.
+
+
 **In contrast, languages like Python, Java, C++, and C# have distinct integer types (e.g., `int`, `long`) and floating-point types (e.g., `float`, `double`) for more control over number representation and precision.**
 
 Here's an expanded table with more comprehensive details on number types:
