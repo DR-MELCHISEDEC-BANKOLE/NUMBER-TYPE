@@ -1,4 +1,4 @@
-# NUMBER-TYPE for Beginners
+# NUMBER-TYPE for BEGINNERS
 **Imagine a digital toolbox with different compartments for storing numbers. Each compartment is a specific number type, designed to hold different kinds of numbers:**
 
 ### JavaScript
